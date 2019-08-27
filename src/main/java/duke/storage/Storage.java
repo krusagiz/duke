@@ -28,7 +28,7 @@ public class Storage {
         printWriter.close();
     }
 
-    public ArrayList<Task> load() throws FileNotFoundException, IOException, ParseException {
+    public ArrayList<Task> load() throws IOException, ParseException {
         ArrayList<Task> tasks = new ArrayList<Task>();
 
         BufferedReader br = new BufferedReader(new FileReader(new File(filePath)));
