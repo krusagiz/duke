@@ -15,7 +15,8 @@ public class Deadline extends Task {
 
     @Override
     public String getTaskName() {
-        return super.getTaskName() + " (by: " + deadlineTime + ")";
+        return super.getTaskName() +
+                " (by: " + Command.DATE_FORMAT.format(deadlineTime) + ")";
     }
 
     @Override

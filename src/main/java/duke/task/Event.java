@@ -18,7 +18,8 @@ public class Event extends Task {
 
     @Override
     public String getTaskName() {
-        return super.getTaskName() + " (at: " + eventTimeFrom + " - " + eventTimeTo + ")";
+        return super.getTaskName() +
+                " (at: " + Command.DATE_FORMAT.format(eventTimeFrom) + " - " + Command.DATE_FORMAT.format(eventTimeTo) + ")";
     }
 
     @Override
